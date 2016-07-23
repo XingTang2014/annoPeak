@@ -1,0 +1,14 @@
+.shiny-progress-container {
+background-color: #FF0000;
+  top: 50% ;
+  left: 50% ;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+hred {
+  font-family: 'Lobster', cursive;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #ad1d28;
+}
