@@ -5,6 +5,7 @@ This application was developed to help biologists visualize their ChIP-seq/ChIP-
 * Peak sets from ChIP-seq/ChIP-exo experiments can be uploaded in a bed format. 
 * annoPeakR is constituted by 5 analysis modules: Peak associated gene structures, Peak size distribution, Peak to nearest peak distances, Overlapping peak identifications, Overlapping peak-associated genes.
 * Tested R version to run this application is  
+
 ## Required R packages
 * Shiny version 0.5.0
 * GenomicRanges version 1.20.5
@@ -25,8 +26,10 @@ This application was developed to help biologists visualize their ChIP-seq/ChIP-
 * TxDb.Hsapiens.UCSC.hg38.knownGene version 3.1.2 
 * org.Hs.eg.db version 3.1.2 
 * org.Mm.eg.db version 3.1.2 
+
 ## Required R data 
 * GeneSigDB [reactive](http://www.genesigdb.org/genesigdb/) 
+
 ## Installation
 ```r
 install.packages(c("shiny", "ggplot2", "VennDiagram", "RColorBrewer", "reshape2", "xtable"))
