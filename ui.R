@@ -24,8 +24,8 @@ shinyUI(pageWithSidebar(
                      radioButtons("dataInput", "", list("Load sample data"=1,"Upload file"=2)),
                      conditionalPanel(condition="input.dataInput=='1'",
                                       h5("Load sample data:"),
-                                      checkboxInput("sampleData_A", "Load sample data A", FALSE),
-                                      checkboxInput("sampleData_B", "Load sample data B", FALSE)
+                                      checkboxInput("sampleData_A", "Load sample data A", TRUE),
+                                      checkboxInput("sampleData_B", "Load sample data B", TRUE)
                      ),
                      conditionalPanel(condition="input.dataInput=='2'",
                                       h5("Upload delimited text file: "),
@@ -136,11 +136,10 @@ shinyUI(pageWithSidebar(
     tabsetPanel(id="tabs1",
       # Welcome tab
       tabPanel("About",
-               HTML('<p> <br> This application was developed to help biologists visualize their ChIP-seq/ChIP-exo results and generate or validate their hypothesis eventually. We hope that you find the annoPeakR useful and we welcome suggestions 
+               HTML('<p> <br> This application was developed to help biologists visualize their ChIP-seq/ChIP-exo results and generate new hypothesis or validate their hypothesis. We hope that you find the annoPeakR useful and we welcome suggestions
                     for additional features by our users. We would like to thank everyone who has made constructive suggestions so far. We will document the addition of new features in the News tab.</p>
-                    <p>This application allows users to generate multiple types plots to compare multiple ChIP-seq/ChIP-exo experiments. Peak sets from ChIP-seq/ChIP-exo experiments  
-                    can be uploaded in a bed format. Peak region wise distribution, closest peak distance distribution, peak set overlaps table and target gene overlaps venn diagram are generated based on the data and can be modified to include 
-                    additional information. Additional features become available when checking that option. Plots can be labeled, customized (colors, dimensions) and exported as eps, pdf and svg files. <br> </p>'),
+                    <p>This application allows users to generate multiple types of plots to compare multiple ChIP-seq/ChIP-exo experiments. Peak sets from ChIP-seq/ChIP-exo experiments
+                    can be uploaded in a bed format. Five analysis modules are presented as described in our paper. Additional features become available when checking that option. Plots can be labeled, customized (colors, dimensions) and exported as eps, pdf and svg files.  <br> </p>'),
                h4("Software references"),
                HTML('<p>R Development Core Team. <i><a href="http://www.r-project.org/">R</a>:  A Language and Environment for Statistical Computing.</i> R Foundation for Statistical Computing, Vienna (2013) <br>
                     RStudio and Inc. <i><a href="http://www.rstudio.com/shiny/">shiny</a>: Web Application Framework for R.</i> R package version 0.5.0 (2013) <br> 
@@ -241,8 +240,8 @@ shinyUI(pageWithSidebar(
       
       # News
       tabPanel("News",
-               h5("Augest 8, 2015"), 
-               p("This is a test version")
+               h5("July 24, 2015"), 
+               p("version 1.0.0")
       ),			
       
       # FAQ 
