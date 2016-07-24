@@ -1,5 +1,5 @@
 # annoPeakR
-This application was developed to help biologists visualize their ChIP-seq/ChIP-exo results and generate or validate their hypothesis eventually. To access this application, user can download this package and deploy it within R. Users can also access our online version from http://ccc-annopeak.osumc.edu/annoPeakR
+This application was developed to help biologists visualize their ChIP-seq/ChIP-exo results and generate or validate their hypothesis eventually. To access this application, users can download this package and deploy it within R. Users can also access our online service from http://ccc-annopeak.osumc.edu/annoPeakR
 ## Features
 * This application allows users to generate multiple types plots to compare multiple ChIP-seq/ChIP-exo experiments. 
 * Peak sets from ChIP-seq/ChIP-exo experiments can be uploaded in a bed format. 
