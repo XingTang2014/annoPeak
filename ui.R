@@ -57,7 +57,7 @@ shinyUI(pageWithSidebar(
     conditionalPanel(condition="input.tabs1=='Data visualization'",
                      
                      h4("Select analysis module"),
-                     radioButtons("plotType", "", list("Peak regionwise distribution"=0, "Peak length distribition"=4, "Nearest peak distances distribution"=1, "Peak sets overlaps"=2, "Target gene sets overlaps"=3)),
+                     radioButtons("plotType", "", list("Peak associated gene structures"=0, "Peak size distribition"=4, "Peak to nearest peak distances"=1, "Overlapping peak identifications"=2, "Overlapping peak-associated genes"=3)),
                      conditionalPanel(condition="input.plotType==0",
                                       h4("Change definition of promoter and enhancer"),
                                       checkboxInput("changePromoterDefinition", "Change definition of promoter region", FALSE),
