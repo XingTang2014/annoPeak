@@ -1,5 +1,5 @@
 
-load("D:/annPeakR/GeneSigDB_GS.RData")
+
 
 run_GSEA <- function(genes, genome){
   if( genome %in% c("mm8", "mm9", "mm10")){ 
