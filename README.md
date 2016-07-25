@@ -4,7 +4,7 @@ This application was developed to help biologists visualize their ChIP-seq/ChIP-
 * This application allows users to generate multiple types plots to compare multiple ChIP-seq/ChIP-exo experiments. 
 * Peak sets from ChIP-seq/ChIP-exo experiments can be uploaded in a bed format. 
 * annoPeakR is constituted by 5 analysis modules: Peak associated gene structures, Peak size distribution, Peak to nearest peak distances, Overlapping peak identifications, Overlapping peak-associated genes.
-* Tested R version to run this application is 3.3.0,  
+* It's better to deploy this application in rstudio. 
 
 ## Required R packages
 * Shiny version 0.5.0
