@@ -25,8 +25,8 @@ generate_peak_overlaps <- function(dataList, minimumDist4overlap){
         gr_i <- toGRanges(dataList[[ peak_sets[i] ]], format="BED")
         gr_j <- toGRanges(dataList[[ peak_sets[j] ]], format="BED")
         overlaps <- findOverlaps(gr_i, gr_j, maxgap=minimumDist4overlap)
-        overlaps_table[i,j] <- length(unique(overlaps@queryHits))
-        overlaps_table[j,i] <- length(unique(overlaps@subjectHits))
+        overlaps_table[i,j] <- length(unique(as.data.frame(overlaps)[,"queryHits"]))
+        overlaps_table[j,i] <- length(unique(as.data.frame(overlaps)[,"subjectHits"]))
       }
     }
   }
