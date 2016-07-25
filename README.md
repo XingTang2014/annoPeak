@@ -29,7 +29,7 @@ This application was developed to help biologists visualize their ChIP-seq/ChIP-
 
 ## Installation
 ```r
-install.packages(c("shiny", "ggplot2", "VennDiagram", "RColorBrewer", "reshape2", "xtable"))
+install.packages(c("shiny", "ggplot2", "VennDiagram", "RColorBrewer", "reshape2", "xtable", "gplots"))
 source("https://bioconductor.org/biocLite.R")
 biocLite(c("GenomicRanges", "ChIPpeakAnno", "biomaRt", "GSEABase", "GO.db", "GOstats", "TxDb.Mmusculus.UCSC.mm9.knownGene", "TxDb.Mmusculus.UCSC.mm10.knownGene", "TxDb.Hsapiens.UCSC.hg18.knownGene", "TxDb.Hsapiens.UCSC.hg19.knownGene", "TxDb.Hsapiens.UCSC.hg38.knownGene", "org.Hs.eg.db", "org.Mm.eg.db"))
 ```
