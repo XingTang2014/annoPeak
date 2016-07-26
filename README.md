@@ -28,8 +28,8 @@ This application was developed to help biologists visualize their ChIP-seq/ChIP-
 * org.Mm.eg.db version 3.1.2 
 
 ## Installation
-*Install R and RStudio
-*Install the R packages within RStudio as below.
+* Install R and RStudio
+* Install the R packages within RStudio as below.
 ```r
 install.packages(c("shiny", "ggplot2", "VennDiagram", "RColorBrewer", "reshape2", "xtable", "gplots"))
 source("https://bioconductor.org/biocLite.R")
