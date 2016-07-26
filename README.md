@@ -29,7 +29,7 @@ This application was developed to help biologists visualize their ChIP-seq/ChIP-
 
 ## Installation
 * Install R and RStudio
-* Install the R packages within RStudio as below.
+* Install R packages within RStudio as below.
 ```r
 install.packages(c("shiny", "ggplot2", "VennDiagram", "RColorBrewer", "reshape2", "xtable", "gplots"))
 source("https://bioconductor.org/biocLite.R")
