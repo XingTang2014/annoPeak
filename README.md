@@ -28,6 +28,7 @@ This application was developed to help biologists visualize their ChIP-seq/ChIP-
 
 ## Installation
 * Install R and RStudio
+
 Please download the right version of R for your own system from https://cloud.r-project.org/ and install it. 
 RStudio is an integrated development environment (IDE) for R. Please download RStudio from https://www.rstudio.com/products/rstudio/#Desktop and install it.
 * Install R packages within RStudio as below.
@@ -37,4 +38,5 @@ source("https://bioconductor.org/biocLite.R")
 biocLite(c("GenomicRanges", "ChIPpeakAnno", "biomaRt", "GSEABase", "GO.db", "GOstats", "TxDb.Mmusculus.UCSC.mm9.knownGene", "TxDb.Mmusculus.UCSC.mm10.knownGene", "TxDb.Hsapiens.UCSC.hg18.knownGene", "TxDb.Hsapiens.UCSC.hg19.knownGene", "TxDb.Hsapiens.UCSC.hg38.knownGene", "org.Hs.eg.db", "org.Mm.eg.db"))
 ```
 * Download the source code for annoPeak from GitHub https://github.com/XingTang2014/annoPeakR/.
+
 Open ui.R from the download annoPeakR folder. Click the button named "Run App" on the upper right corner of code editing window, an web page will be automatically invoked and the annoPeak application is ready to use. It may take a few minutes to load the required packages. 
