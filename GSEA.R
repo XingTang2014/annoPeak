@@ -55,7 +55,7 @@ run_GSEA <- function(genes, genome){
   res <- data.frame(res, ExpCount=ExpCount, Count=Count, Size=Size, BH.adj.Pvalue=BH.adj.Pvalue, Gene=enrichedGenesInSig)
   res <- res[order(res$Pvalue), ]
   res<- res[ res$BH.adj.Pvalue < adj.cutoff, ]
-  res
+  subset(res, Size < 1000)
 }
 
 
@@ -97,7 +97,7 @@ run_GO <- function(genes, genome){
   }
   
   res <- res[order(res$Pvalue), ]
-  res
+  subset(res, Size < 1000)
 }
 
 
