@@ -91,8 +91,8 @@ shinyUI(pageWithSidebar(
                                                    selected = 1),
                                       conditionalPanel(condition="input.modeOfGeneSetsSelection==3", 
                                                        h5("Subtract from GeneSet1", style = "color:red")),
-                                      actionButton("goButton", "Go!"),
-                                      p("Click the button to start functional enrichment analysis."),
+                                      actionButton("goButton", "Start Functional Enrichment Analysis"),
+                                      HTML('<p>We recommend using Fisher\'s exact test only for promoter region.  Using it with any of the other locus definitions may result in biased enrichment results.  Please download the peak coordinate from other regions you are interested in from our application and upload them to <a href="http://bejerano.stanford.edu/great/public/html/">GREAT</a> to do both hypergeometric test and binomial test.</p>'),
                                       uiOutput("GeneSet1"),
                                       uiOutput("GeneSet2"),
                                       uiOutput("GeneSet3"),
@@ -246,6 +246,11 @@ shinyUI(pageWithSidebar(
       
       # FAQ 
       tabPanel("FAQ",
+               h5("Q: Can user do motif analysis with this application?"),
+               p("A: Currently we didn't integrate this analysis directly. A simple solution for users is to
+                download annotated peaks from \"Peak associated gene structures\" module of our application
+                and upload interested peaks to http://embnet.ccg.unam.mx/rsa-tools/ to do motif analysis with
+                \"RSAT peak-motif\" algorithm. User can also try other motif discovery tools, such as MEME, HOMER and etc.."),
                h5("Q: How to compare peaks only from a specific region (eg, promoter)?"),
                p("A: If you want to analyze peaks only from promoter region using annoPeakR, 
                   you can download the \"target genes data\" file from \"Peak regionwise distribution\" module.
