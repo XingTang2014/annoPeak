@@ -123,7 +123,7 @@ shinyUI(pageWithSidebar(
                      ),
                      checkboxInput("changeFont", "Change font", FALSE),
                      conditionalPanel(condition="input.changeFont",
-                                      textInput("Font", "", "Bookman"),
+                                      textInput("Font", "", "Times"),
                                       HTML('<p>Check <a href="http://www.cookbook-r.com/Graphs/Fonts/#table-of-fonts">R Fonts</a> for more fonts</p>')
                      ),
                      sliderInput("fontSizes",
