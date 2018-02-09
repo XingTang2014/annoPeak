@@ -33,7 +33,7 @@ Please download the right version of R for your own system from https://cloud.r-
 RStudio is an integrated development environment (IDE) for R. Please download RStudio from https://www.rstudio.com/products/rstudio/#Desktop and install it.
 * Install R packages within RStudio as below.
 ```r
-install.packages(c("shiny", "ggplot2", "VennDiagram", "RColorBrewer", "reshape2", "xtable", "gplots"))
+install.packages(c("shiny", "ggplot2", "VennDiagram", "RColorBrewer", "reshape2", "xtable", "gplots", "RMySQL"))
 source("https://bioconductor.org/biocLite.R")
 biocLite(c("GenomicRanges", "ChIPpeakAnno", "biomaRt", "GSEABase", "GO.db", "GOstats", "TxDb.Mmusculus.UCSC.mm9.knownGene", "TxDb.Mmusculus.UCSC.mm10.knownGene", "TxDb.Hsapiens.UCSC.hg18.knownGene", "TxDb.Hsapiens.UCSC.hg19.knownGene", "TxDb.Hsapiens.UCSC.hg38.knownGene", "org.Hs.eg.db", "org.Mm.eg.db"))
 ```
